@@ -8,6 +8,7 @@ public class PlatformSpawner : MonoBehaviour
     public GameObject spikePlatform;
     public GameObject[] movingPlatforms;
     public GameObject breakablePlatform;
+    public GameObject groundPlatform;
 
     public float spawnTimer = 1.8f;
 
@@ -33,6 +34,8 @@ public class PlatformSpawner : MonoBehaviour
 
         if (currentSpawnTimer >= spawnTimer) //Spawn platform
         {
+            BackgroundScroll.instance.isScrolling = true;
+
             spawnCount++;
 
             Vector3 tmp = transform.position;
@@ -77,13 +80,20 @@ public class PlatformSpawner : MonoBehaviour
                     newPlatform = Instantiate(breakablePlatform, tmp, Quaternion.identity);
                 }
 
-                spawnCount = 0;
+                spawnCount = Random.Range(0, 5);
+            }
+            else if (spawnCount == 5)
+            {
+                tmp.x = 0;
+
+                newPlatform = Instantiate(groundPlatform, tmp, Quaternion.identity);
             }
 
             if (newPlatform)
             {
                 newPlatform.transform.parent = transform; // Spawned platforms will be PlatformSpawner's children
             }
+
             currentSpawnTimer = 0f;
         }
     }

@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class BackgroundScroll : MonoBehaviour
 {
+    public static BackgroundScroll instance;
+
     public float scrollSpeed = 0.3f;
 
     private MeshRenderer meshRenderer;
 
     private string texture = "_MainTex";
 
+    public bool isScrolling;
+
     private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+
         meshRenderer = GetComponent<MeshRenderer>();
     }
 
@@ -22,9 +31,12 @@ public class BackgroundScroll : MonoBehaviour
 
     private void Scroll()
     {
-        Vector2 offset = meshRenderer.sharedMaterial.GetTextureOffset(texture);
-        offset.y += Time.deltaTime * scrollSpeed;
+        if (isScrolling)
+        {
+            Vector2 offset = meshRenderer.sharedMaterial.GetTextureOffset(texture);
+            offset.y += Time.deltaTime * scrollSpeed;
 
-        meshRenderer.sharedMaterial.SetTextureOffset(texture, offset);
+            meshRenderer.sharedMaterial.SetTextureOffset(texture, offset);
+        }
     }
 }

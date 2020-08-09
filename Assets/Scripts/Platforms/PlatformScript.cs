@@ -8,7 +8,7 @@ public class PlatformScript : MonoBehaviour
 
     public float boundY = 6f; // Max y to see the platform
 
-    public bool movingLeft, movingRight, isBreakable, isSpike, isPlatform;
+    public bool movingLeft, movingRight, isBreakable, isSpike, isPlatform, isGround;
 
     private Animator anim;
 
@@ -27,13 +27,29 @@ public class PlatformScript : MonoBehaviour
 
     private void Move()
     {
-        Vector2 tmp = transform.position;
-        tmp.y += moveSpeed * Time.deltaTime;
-        transform.position = tmp;
-
-        if (tmp.y >= boundY)
+        if (!isGround)
         {
-            Destroy(gameObject);
+            Vector2 tmp = transform.position;
+            tmp.y += moveSpeed * Time.deltaTime;
+            transform.position = tmp;
+
+            if (tmp.y >= boundY)
+            {
+                Destroy(gameObject);
+            }
+        }
+        else
+        {
+            Vector2 tmp = transform.position;
+            if (tmp.y < boundY)
+            {
+                tmp.y += moveSpeed * Time.deltaTime;
+                transform.position = tmp;
+            }
+            else
+            {
+                BackgroundScroll.instance.isScrolling = false;
+            }
         }
     }
 
