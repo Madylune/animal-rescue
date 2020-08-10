@@ -1782,37 +1782,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2134626177 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4114008520419204304, guid: d5ddb00eebe074200a25b3f8f08ee226,
-    type: 3}
-  m_PrefabInstance: {fileID: 4114008519163119691}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &2134626178
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134626177}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e089370f2e1ee4908adeacd1d89efca5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!212 &2134626182 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 4114008520419204311, guid: d5ddb00eebe074200a25b3f8f08ee226,
-    type: 3}
-  m_PrefabInstance: {fileID: 4114008519163119691}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3677456592187162644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1894,16 +1863,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4114008520419204308, guid: d5ddb00eebe074200a25b3f8f08ee226,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114008520419204308, guid: d5ddb00eebe074200a25b3f8f08ee226,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4114008520419204310, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1961,14 +1920,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4114008520419204331, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 2134626178}
-    - target: {fileID: 4114008520419204331, guid: d5ddb00eebe074200a25b3f8f08ee226,
-        type: 3}
-      propertyPath: spriteRenderer
-      value: 
-      objectReference: {fileID: 2134626182}
+      propertyPath: jumpVelocity
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5ddb00eebe074200a25b3f8f08ee226, type: 3}
 --- !u!1001 &6187415198151335923

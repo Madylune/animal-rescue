@@ -13,9 +13,19 @@ public class PlayerMovement : MonoBehaviour
 
     public float moveSpeed = 2f;
 
+    public float jumpVelocity = 10f;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            Jump();
+        }
     }
 
     private void FixedUpdate()
@@ -53,5 +63,10 @@ public class PlayerMovement : MonoBehaviour
     public void PlatformMove(float x)
     {
         rb.velocity = new Vector2(x, rb.velocity.y);
+    }
+
+    private void Jump()
+    {
+        rb.velocity = Vector2.up * jumpVelocity; 
     }
 }
