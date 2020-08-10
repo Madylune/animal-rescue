@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float moveSpeed = 2f;
 
-    public float jumpVelocity = 10f;
+    public float jumpVelocity = 7f;
 
     private void Awake()
     {

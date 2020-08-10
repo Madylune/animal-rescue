@@ -1765,7 +1765,8 @@ MonoBehaviour:
     type: 3}
   groundPlatform: {fileID: 9186840211341061517, guid: 3bacaa36bac214c228462ea849b8ccaf,
     type: 3}
-  spawnTimer: 1.8
+  spawnTimer: 1.3
+  waveNumber: 7
   minX: -2
   maxX: 2
 --- !u!4 &2118246826
@@ -1921,7 +1922,7 @@ PrefabInstance:
     - target: {fileID: 4114008520419204331, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: jumpVelocity
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5ddb00eebe074200a25b3f8f08ee226, type: 3}
