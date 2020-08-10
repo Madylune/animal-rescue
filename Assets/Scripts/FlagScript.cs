@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class FlagScript : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameManager.instance.RestartGame();
+        if (collision.tag == "Player")
+        {
+            Invoke("ChangeAfterTime", 2f);
+        }
+    }
+
+    void ChangeAfterTime()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level02");
     }
 }
