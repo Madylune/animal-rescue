@@ -14,6 +14,6 @@ public class FlagScript : MonoBehaviour
 
     void ChangeAfterTime()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Level02");
+        SceneSwitcherManager.instance.SwitchToNextScene();
     }
 }
