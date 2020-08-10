@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1617914881910044744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1617914881910044746}
+  - component: {fileID: 1617914881910044745}
+  m_Layer: 0
+  m_Name: PlatformSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1617914881910044746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617914881910044744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1617914881910044745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617914881910044744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e05ebdb15e3f4bdb99138659b3f9d65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regularPlatform: {fileID: 6187415199378804451, guid: c6923c39e72ca40d59a9aae89ded3d5b,
+    type: 3}
+  spikePlatform: {fileID: 9051492293019251831, guid: cc2b0f88f46eb4934a7b32940cc59db1,
+    type: 3}
+  movingPlatforms:
+  - {fileID: 2854138190705978085, guid: 5dcf8370d94164204bfef73c48892234, type: 3}
+  - {fileID: 2860390647458469675, guid: 8941a750a2db54445bda00b07934c2f2, type: 3}
+  breakablePlatform: {fileID: 7410651548487615805, guid: 818aae618fb374712b365f9105c231d9,
+    type: 3}
+  groundPlatform: {fileID: 9186840211341061517, guid: 3bacaa36bac214c228462ea849b8ccaf,
+    type: 3}
+  spawnTimer: 1.3
+  waveNumber: 7
+  minX: -2
+  maxX: 2

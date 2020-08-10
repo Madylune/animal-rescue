@@ -51,7 +51,7 @@ MonoBehaviour:
   iceBreakClip: {fileID: 8300000, guid: 10ad2189eafb14cbbb22e11caff5f881, type: 3}
   gameOverClip: {fileID: 8300000, guid: a1f23edc29534489fb22244ec7f299b1, type: 3}
   flapClip: {fileID: 8300000, guid: d9d88089ad7524578b2ea096abedc7c8, type: 3}
-  lootClip: {fileID: 8300000, guid: 653ac7fd5a5674c188f5c197b6373a4c, type: 3}
+  lootClip: {fileID: 8300000, guid: f2882c866e72c4440a6de6d9326f5a79, type: 3}
 --- !u!82 &3677456592497516489
 AudioSource:
   m_ObjectHideFlags: 0

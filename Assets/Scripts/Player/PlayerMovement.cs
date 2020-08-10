@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class PlayerMovement : MonoBehaviour
 
     public float jumpVelocity = 7f;
 
+    public int jumpCount = 0;
+
+    public Text starCountText;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -26,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
         {
             Jump();
         }
+
+        starCountText.text = jumpCount.ToString();
     }
 
     private void FixedUpdate()
@@ -67,7 +74,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        rb.velocity = Vector2.up * jumpVelocity;
-        SoundManager.instance.FlapSound();
+        if (jumpCount > 0)
+        {
+            jumpCount--;
+
+            rb.velocity = Vector2.up * jumpVelocity;
+            SoundManager.instance.FlapSound();
+        }
     }
 }
