@@ -149,6 +149,9 @@ MonoBehaviour:
   anim: {fileID: 2134626178}
   spriteRenderer: {fileID: 4114008520419204311}
   moveSpeed: 2
+  jumpVelocity: 7
+  jumpCount: 0
+  starCountText: {fileID: 0}
 --- !u!114 &4114008520419204330
 MonoBehaviour:
   m_ObjectHideFlags: 0
