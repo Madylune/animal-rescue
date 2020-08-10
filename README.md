@@ -1,5 +1,5 @@
 # Animal Rescue
-It's a little platform game developed by [Madylune](https://github.com/Madylune).
+It's a little platform mobile game developed by [Madylune](https://github.com/Madylune). Your role is to save animals from men. If you fail, they will be eat by them.
 
 This game is developed with [Unity](https://unity.com/fr).
 
