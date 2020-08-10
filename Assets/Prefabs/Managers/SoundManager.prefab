@@ -50,6 +50,8 @@ MonoBehaviour:
   deathClip: {fileID: 8300000, guid: ebf5a75a26160464083d7f00ac282042, type: 3}
   iceBreakClip: {fileID: 8300000, guid: 10ad2189eafb14cbbb22e11caff5f881, type: 3}
   gameOverClip: {fileID: 8300000, guid: a1f23edc29534489fb22244ec7f299b1, type: 3}
+  flapClip: {fileID: 8300000, guid: d9d88089ad7524578b2ea096abedc7c8, type: 3}
+  lootClip: {fileID: 8300000, guid: 653ac7fd5a5674c188f5c197b6373a4c, type: 3}
 --- !u!82 &3677456592497516489
 AudioSource:
   m_ObjectHideFlags: 0
@@ -156,7 +158,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6364f387a48f94340b79cfd2e188d17d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

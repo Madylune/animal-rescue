@@ -67,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        rb.velocity = Vector2.up * jumpVelocity; 
+        rb.velocity = Vector2.up * jumpVelocity;
+        SoundManager.instance.FlapSound();
     }
 }

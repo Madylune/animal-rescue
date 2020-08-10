@@ -10,7 +10,7 @@ public class SoundManager : MonoBehaviour
     private AudioSource soundFX;
 
     [SerializeField]
-    private AudioClip landClip, deathClip, iceBreakClip, gameOverClip;
+    private AudioClip landClip, deathClip, iceBreakClip, gameOverClip, flapClip, lootClip;
 
     private void Awake()
     {
@@ -41,6 +41,18 @@ public class SoundManager : MonoBehaviour
     public void GameOverSound()
     {
         soundFX.clip = gameOverClip;
+        soundFX.Play();
+    }
+
+    public void FlapSound()
+    {
+        soundFX.clip = flapClip;
+        soundFX.Play();
+    }
+
+    public void LootSound()
+    {
+        soundFX.clip = lootClip;
         soundFX.Play();
     }
 }
