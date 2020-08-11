@@ -14,6 +14,8 @@ public class CharSelectorManager : MonoBehaviour
 
     private int characterIndex = 0;
 
+    private readonly string selectedCharacter = "SelectedCharacter";
+
     private void Awake()
     {
         characters[characterIndex].SetActive(true);
@@ -54,6 +56,7 @@ public class CharSelectorManager : MonoBehaviour
             if (character.name == characters[characterIndex].name)
             {
                 characters[characterIndex].SetActive(true);
+                PlayerPrefs.SetInt(selectedCharacter, characterIndex);
             }
             else
             {
