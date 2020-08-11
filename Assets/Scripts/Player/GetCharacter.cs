@@ -4,17 +4,7 @@ using UnityEngine;
 
 public class GetCharacter : MonoBehaviour
 {
-    [SerializeField]
-    private Sprite[] sprites;
-
-    private SpriteRenderer spriteRenderer;
-
     private readonly string selectedCharacter = "SelectedCharacter";
-
-    private void Awake()
-    {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
 
     private void Start()
     {
@@ -22,6 +12,10 @@ public class GetCharacter : MonoBehaviour
 
         characterIndex = PlayerPrefs.GetInt(selectedCharacter);
 
-        spriteRenderer.sprite = sprites[characterIndex];
+        GameObject character;
+
+        character = transform.GetChild(characterIndex).gameObject;
+
+        character.SetActive(true);
     }
 }
