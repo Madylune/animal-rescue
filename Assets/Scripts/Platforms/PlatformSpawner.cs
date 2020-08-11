@@ -10,6 +10,8 @@ public class PlatformSpawner : MonoBehaviour
     public GameObject breakablePlatform;
     public GameObject groundPlatform;
 
+    public bool isHard, isDungeon;
+
     public float spawnTimer = 1.8f;
 
     public int waveNumber;
@@ -57,7 +59,7 @@ public class PlatformSpawner : MonoBehaviour
                 }
                 else if (spawnCount == 2)
                 {
-                    if (Random.Range(0, 2) > 0)
+                    if (Random.Range(0, 2) > (isHard ? 1 : 0))
                     {
                         newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
                     }
@@ -68,7 +70,7 @@ public class PlatformSpawner : MonoBehaviour
                 }
                 else if (spawnCount == 3)
                 {
-                    if (Random.Range(0, 2) > 0)
+                    if (Random.Range(0, 2) > (isDungeon ? 1 : 0))
                     {
                         newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
                     }
@@ -79,7 +81,7 @@ public class PlatformSpawner : MonoBehaviour
                 }
                 else if (spawnCount == 4)
                 {
-                    if (Random.Range(0, 2) > 0)
+                    if (Random.Range(0, 2) > (isHard ? 1 : 0))
                     {
                         newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
                     }
