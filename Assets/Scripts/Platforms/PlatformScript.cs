@@ -8,15 +8,21 @@ public class PlatformScript : MonoBehaviour
 
     public float boundY = 6f; // Max y to see the platform
 
-    public bool movingLeft, movingRight, isBreakable, isSpike, isPlatform, isGround;
+    public bool movingLeft, movingRight, isBreakable, isSpike, isPlatform, isGround, isFalling;
 
     private Animator anim;
+
+    private Rigidbody2D rb;
 
     private void Awake()
     {
         if (isBreakable)
         {
             anim = GetComponent<Animator>();
+        }
+        if (isFalling)
+        {
+            rb = GetComponent<Rigidbody2D>();
         }
     }
 
@@ -91,6 +97,11 @@ public class PlatformScript : MonoBehaviour
                 SoundManager.instance.LandSound();
             }
         }
+
+        if (target.gameObject.tag == "Platform" && isFalling)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnCollisionStay2D(Collision2D target)
@@ -104,6 +115,15 @@ public class PlatformScript : MonoBehaviour
             if (movingRight)
             {
                 target.gameObject.GetComponent<PlayerMovement>().PlatformMove(1f);
+            }
+            if (isFalling)
+            {
+                rb.gravityScale = 1;
+
+                if (transform.position.y <= -6f)
+                {
+                    Destroy(gameObject);
+                }
             }
         }
     }

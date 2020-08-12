@@ -54,6 +54,10 @@ MonoBehaviour:
     type: 3}
   groundPlatform: {fileID: 9186840211341061517, guid: 3bacaa36bac214c228462ea849b8ccaf,
     type: 3}
+  fallingPlatform: {fileID: 3036115488005814820, guid: 154fa306ac2f745f4896595471ef6280,
+    type: 3}
+  isHard: 0
+  isDungeon: 0
   spawnTimer: 1.3
   waveNumber: 7
   minX: -2

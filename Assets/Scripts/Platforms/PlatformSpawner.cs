@@ -9,6 +9,7 @@ public class PlatformSpawner : MonoBehaviour
     public GameObject[] movingPlatforms;
     public GameObject breakablePlatform;
     public GameObject groundPlatform;
+    public GameObject fallingPlatform;
 
     public bool isHard, isDungeon;
 
@@ -80,6 +81,17 @@ public class PlatformSpawner : MonoBehaviour
                     }
                 }
                 else if (spawnCount == 4)
+                {
+                    if (Random.Range(0, 2) > (isHard ? 1 : 0))
+                    {
+                        newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
+                    }
+                    else
+                    {
+                        newPlatform = Instantiate(fallingPlatform, tmp, Quaternion.identity);
+                    }
+                }
+                else if (spawnCount == 5)
                 {
                     if (Random.Range(0, 2) > (isHard ? 1 : 0))
                     {

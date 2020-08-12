@@ -27,6 +27,11 @@ public class StarsSpawner : MonoBehaviour
         {
             SpawnStars();
         }
+        else
+        {
+            spawnCount = 4;
+            currentSpawnTimer = 0f;
+        }
     }
 
     private void SpawnStars()

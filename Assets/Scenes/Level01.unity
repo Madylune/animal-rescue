@@ -2045,6 +2045,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 1617914881910044745, guid: 12863e6d79875491c9871afce9005f8e,
+        type: 3}
+      propertyPath: fallingPlatform
+      value: 
+      objectReference: {fileID: 3036115488005814820, guid: 154fa306ac2f745f4896595471ef6280,
+        type: 3}
     - target: {fileID: 1617914881910044746, guid: 12863e6d79875491c9871afce9005f8e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2328,10 +2334,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6187415199378804450, guid: c6923c39e72ca40d59a9aae89ded3d5b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6187415199378804451, guid: c6923c39e72ca40d59a9aae89ded3d5b,
         type: 3}
       propertyPath: m_Name
       value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187415199378804451, guid: c6923c39e72ca40d59a9aae89ded3d5b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6187415199378804455, guid: c6923c39e72ca40d59a9aae89ded3d5b,
         type: 3}

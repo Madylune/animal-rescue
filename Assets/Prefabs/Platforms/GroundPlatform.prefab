@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9186840211341061518}
   m_Layer: 0
   m_Name: GroundPlatform
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,6 +152,7 @@ MonoBehaviour:
   isSpike: 0
   isPlatform: 0
   isGround: 1
+  isFalling: 0
 --- !u!1001 &4531925701908590350
 PrefabInstance:
   m_ObjectHideFlags: 0
