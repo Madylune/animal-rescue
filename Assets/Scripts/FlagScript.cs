@@ -8,7 +8,8 @@ public class FlagScript : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Invoke("ChangeAfterTime", 2f);
+            SoundManager.instance.VictorySound();
+            Invoke("ChangeAfterTime", 3f);
         }
     }
 

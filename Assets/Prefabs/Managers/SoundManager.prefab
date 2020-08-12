@@ -52,6 +52,7 @@ MonoBehaviour:
   gameOverClip: {fileID: 8300000, guid: a1f23edc29534489fb22244ec7f299b1, type: 3}
   flapClip: {fileID: 8300000, guid: d9d88089ad7524578b2ea096abedc7c8, type: 3}
   lootClip: {fileID: 8300000, guid: f2882c866e72c4440a6de6d9326f5a79, type: 3}
+  victoryClip: {fileID: 8300000, guid: 6f9c544aa29ca4b398ec2fd8f293ff04, type: 3}
 --- !u!82 &3677456592497516489
 AudioSource:
   m_ObjectHideFlags: 0

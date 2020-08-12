@@ -2114,6 +2114,11 @@ PrefabInstance:
       propertyPath: lootClip
       value: 
       objectReference: {fileID: 8300000, guid: f2882c866e72c4440a6de6d9326f5a79, type: 3}
+    - target: {fileID: 3677456592497516488, guid: 02d616c5487f54d1e86196f47d4e49e6,
+        type: 3}
+      propertyPath: victoryClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6f9c544aa29ca4b398ec2fd8f293ff04, type: 3}
     - target: {fileID: 3677456592497516494, guid: 02d616c5487f54d1e86196f47d4e49e6,
         type: 3}
       propertyPath: m_Name
