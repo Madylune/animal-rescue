@@ -18,6 +18,7 @@ public class CharSelectorManager : MonoBehaviour
 
     private void Awake()
     {
+        characterIndex = PlayerPrefs.GetInt(selectedCharacter);
         characters[characterIndex].SetActive(true);
     }
 
