@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Text starCountText;
 
+    private bool isDying;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -74,12 +76,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        if (jumpCount > 0)
+        if (jumpCount > 0 && !isDying)
         {
             jumpCount--;
 
             rb.velocity = Vector2.up * jumpVelocity;
             SoundManager.instance.FlapSound();
         }
+    }
+
+    public void TakeDamage()
+    {
+        isDying = true;
+        anim.SetTrigger("Damage");
     }
 }

@@ -76,7 +76,7 @@ public class PlatformScript : MonoBehaviour
         {
             if (isSpike)
             {
-                target.transform.position = new Vector2(1000f, 1000f);
+                target.GetComponent<PlayerMovement>().TakeDamage();
                 SoundManager.instance.GameOverSound();
                 GameManager.instance.RestartGame();
             }

@@ -43,9 +43,18 @@ public class PlayerBounds : MonoBehaviour
     {
         if (target.tag == "TopSpike")
         {
-            transform.position = new Vector2(1000f, 1000f);
+            StartCoroutine(Die());
+
             SoundManager.instance.DeathSound();
             GameManager.instance.RestartGame();
         }
+    }
+
+    private IEnumerator Die()
+    {
+        GetComponent<PlayerMovement>().TakeDamage();
+
+        yield return new WaitForSeconds(1);
+        transform.position = new Vector2(1000f, 1000f);
     }
 }
