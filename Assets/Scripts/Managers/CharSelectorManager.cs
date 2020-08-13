@@ -64,6 +64,15 @@ public class CharSelectorManager : MonoBehaviour
                 character.SetActive(false);
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            PreviousCharacter();
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            NextCharacter();
+        }
     }
 
     public void NextCharacter()
