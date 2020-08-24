@@ -3,14 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement instance;
+
+    public bool isSpawning;
+
     private Rigidbody2D rb;
 
     public Animator anim;
 
     public SpriteRenderer spriteRenderer;
+
+    public Joystick joystick;
 
     public float moveSpeed = 2f;
 
@@ -22,14 +29,21 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isDying;
 
+    public Rigidbody2D MyRb { get => rb; set => rb = value; }
+
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        if (instance == null)
+        {
+            instance = this;
+        }
+
+        MyRb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") || CrossPlatformInputManager.GetButtonDown("Jump"))
         {
             Jump();
         }
@@ -40,20 +54,20 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
-        Flip(rb.velocity.x);
+        Flip(MyRb.velocity.x);
     }
 
     private void Move()
     {
-        anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+        anim.SetFloat("Speed", Mathf.Abs(MyRb.velocity.x));
 
-        if (Input.GetAxisRaw("Horizontal") > 0f)
+        if (Input.GetAxisRaw("Horizontal") > 0f || CrossPlatformInputManager.GetAxis("Horizontal") > 0f)
         {
-            rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+            MyRb.velocity = new Vector2(moveSpeed, MyRb.velocity.y);
         }
-        if (Input.GetAxisRaw("Horizontal") < 0f)
+        if (Input.GetAxisRaw("Horizontal") < 0f || CrossPlatformInputManager.GetAxis("Horizontal") < 0f)
         {
-            rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
+            MyRb.velocity = new Vector2(-moveSpeed, MyRb.velocity.y);
         }
     }
 
@@ -71,16 +85,16 @@ public class PlayerMovement : MonoBehaviour
 
     public void PlatformMove(float x)
     {
-        rb.velocity = new Vector2(x, rb.velocity.y);
+        MyRb.velocity = new Vector2(x, MyRb.velocity.y);
     }
 
-    private void Jump()
+    public void Jump()
     {
         if (jumpCount > 0 && !isDying)
         {
             jumpCount--;
 
-            rb.velocity = Vector2.up * jumpVelocity;
+            MyRb.velocity = Vector2.up * jumpVelocity;
             SoundManager.instance.FlapSound();
         }
     }
