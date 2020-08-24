@@ -14,7 +14,17 @@ PrefabInstance:
     - target: {fileID: 4114008520419204304, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: m_Name
-      value: Squirrel Variant
+      value: Squirrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114008520419204304, guid: d5ddb00eebe074200a25b3f8f08ee226,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114008520419204308, guid: d5ddb00eebe074200a25b3f8f08ee226,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4114008520419204309, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
@@ -49,32 +59,32 @@ PrefabInstance:
     - target: {fileID: 4114008520419204310, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.49147606
       objectReference: {fileID: 0}
     - target: {fileID: 4114008520419204310, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.173
+      value: 0.17879494
       objectReference: {fileID: 0}
     - target: {fileID: 4114008520419204310, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.0028120577
       objectReference: {fileID: 0}
     - target: {fileID: 4114008520419204310, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4114008520419204310, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4114008520419204310, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4114008520419204310, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
@@ -121,6 +131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FlipX
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114008520419204331, guid: d5ddb00eebe074200a25b3f8f08ee226,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7358525420496214283, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}

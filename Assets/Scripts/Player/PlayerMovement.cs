@@ -17,8 +17,6 @@ public class PlayerMovement : MonoBehaviour
 
     public SpriteRenderer spriteRenderer;
 
-    public Joystick joystick;
-
     public float moveSpeed = 2f;
 
     public float jumpVelocity = 7f;
