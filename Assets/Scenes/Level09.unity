@@ -1103,6 +1103,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &603739475 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1819822692, guid: 8434c39c40512426d9224ddbf9129620,
+    type: 3}
+  m_PrefabInstance: {fileID: 1106485860}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &707910322
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,6 +1442,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 355629699, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 49.82007
+      objectReference: {fileID: 0}
     - target: {fileID: 8198297645944365509, guid: 8434c39c40512426d9224ddbf9129620,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2097,6 +2113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d421d2889617d4887a043bc9a045ed85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpButton: {fileID: 603739475}
 --- !u!4 &1713888458
 Transform:
   m_ObjectHideFlags: 0

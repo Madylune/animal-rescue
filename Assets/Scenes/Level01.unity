@@ -1731,6 +1731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d421d2889617d4887a043bc9a045ed85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpButton: {fileID: 8198297646347950159}
 --- !u!4 &1951548496
 Transform:
   m_ObjectHideFlags: 0
@@ -2591,6 +2592,18 @@ PrefabInstance:
 --- !u!114 &8198297646347950158 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3803297498109902461, guid: 8434c39c40512426d9224ddbf9129620,
+    type: 3}
+  m_PrefabInstance: {fileID: 8198297646347950157}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8198297646347950159 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1819822692, guid: 8434c39c40512426d9224ddbf9129620,
     type: 3}
   m_PrefabInstance: {fileID: 8198297646347950157}
   m_PrefabAsset: {fileID: 0}
