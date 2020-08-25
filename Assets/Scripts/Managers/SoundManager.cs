@@ -20,6 +20,13 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    public void ToggleSound(bool toggle)
+    {
+        //toggle = !toggle;
+
+        AudioListener.volume = toggle ? 1f : 0f;
+    }
+
     public void LandSound()
     {
         soundFX.clip = landClip;

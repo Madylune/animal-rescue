@@ -2,16 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool isPaused;
 
+    private bool soundOn;
+
     [SerializeField]
     private GameObject pausePanel;
 
+    [SerializeField]
+    private GameObject musicButton;
+
+    private void Start()
+    {
+        soundOn = AudioListener.volume > 0 ? true : false;
+    }
+
     private void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused)
@@ -46,9 +58,26 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(sceneIndex);
     }
 
-    public void OpenSettings()
+    public void ToggleSound()
     {
-        Time.timeScale = 1f;
+        var img = musicButton.GetComponent<Image>();
+
+        var tmp = img.color;
+
+        if (soundOn)
+        {
+            tmp.a = 0.5f;
+            SoundManager.instance.ToggleSound(false);
+            soundOn = false;
+        }
+        else
+        {
+            tmp.a = 1f;
+            SoundManager.instance.ToggleSound(true);
+            soundOn = true;
+        }
+
+        img.color = tmp;
     }
 
     public void LoadMainMenu()
