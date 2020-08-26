@@ -36,6 +36,12 @@ public class SceneSwitcherManager : MonoBehaviour
         if (nextScene < totalScenes)
         {
             SceneManager.LoadScene(nextScene);
+
+            // Setting Int for Index to unlock next level
+            if (nextScene > PlayerPrefs.GetInt("levelAt"))
+            {
+                PlayerPrefs.SetInt("levelAt", nextScene);
+            }
         }
         else
         {
