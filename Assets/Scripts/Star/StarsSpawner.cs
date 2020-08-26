@@ -23,7 +23,7 @@ public class StarsSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.instance.isSpawning)
+        if (GameManager.instance.IsSpawning)
         {
             SpawnStars();
         }

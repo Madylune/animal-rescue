@@ -1283,6 +1283,11 @@ PrefabInstance:
       propertyPath: currentLevel
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 7993582918872324064, guid: db5b669c5bb754f3f84db8664d591806,
+        type: 3}
+      propertyPath: gameOverPanel
+      value: 
+      objectReference: {fileID: 1106485865}
     - target: {fileID: 7993582918872324070, guid: db5b669c5bb754f3f84db8664d591806,
         type: 3}
       propertyPath: m_Name
@@ -1524,6 +1529,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Resume
       objectReference: {fileID: 0}
+    - target: {fileID: 245318141, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2088265749}
+    - target: {fileID: 245318141, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
+      objectReference: {fileID: 0}
     - target: {fileID: 355629699, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 49.82007
@@ -1559,6 +1572,14 @@ PrefabInstance:
     - target: {fileID: 1607633480, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636422542, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2088265749}
+    - target: {fileID: 1636422542, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 8198297645944365509, guid: 8434c39c40512426d9224ddbf9129620,
         type: 3}
@@ -1705,6 +1726,12 @@ GameObject:
 --- !u!1 &1106485864 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1857371195, guid: 8434c39c40512426d9224ddbf9129620,
+    type: 3}
+  m_PrefabInstance: {fileID: 1106485860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1106485865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 612799382, guid: 8434c39c40512426d9224ddbf9129620,
     type: 3}
   m_PrefabInstance: {fileID: 1106485860}
   m_PrefabAsset: {fileID: 0}

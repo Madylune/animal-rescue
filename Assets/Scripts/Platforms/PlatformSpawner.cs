@@ -45,7 +45,7 @@ public class PlatformSpawner : MonoBehaviour
 
         if (currentSpawnTimer >= spawnTimer) //Spawn platform
         {
-            GameManager.instance.isSpawning = true;
+            GameManager.instance.IsSpawning = true;
 
             BackgroundScroll.instance.isScrolling = true;
 
@@ -132,7 +132,7 @@ public class PlatformSpawner : MonoBehaviour
 
                 newPlatform = Instantiate(groundPlatform, tmp, Quaternion.identity);
 
-                GameManager.instance.isSpawning = false;
+                GameManager.instance.IsSpawning = false;
 
                 waveCount++;
             }

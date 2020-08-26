@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSpawning: 0
+  gameOverPanel: {fileID: 0}
 --- !u!114 &7993582918872324065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,3 +71,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b2e338043644bb7aaa385a6f4c853e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSpawning: 0
+  levelNumber: {fileID: 0}
+  currentLevel: 1

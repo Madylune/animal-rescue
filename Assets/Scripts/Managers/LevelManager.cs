@@ -8,8 +8,6 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
 
-    public bool isSpawning;
-
     private void Awake()
     {
         if (instance == null)

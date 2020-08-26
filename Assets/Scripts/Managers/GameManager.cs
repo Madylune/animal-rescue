@@ -6,7 +6,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public bool isSpawning;
+    private bool isSpawning;
+
+    [SerializeField]
+    public GameObject gameOverPanel;
+
+    public bool IsSpawning { get => isSpawning; set => isSpawning = value; }
 
     private void Awake()
     {
@@ -14,6 +19,12 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
+    }
+
+    public void GameOver()
+    {
+        gameOverPanel.SetActive(true);
+        Time.timeScale = 0f; // Freeze time and game
     }
 
     public void RestartGame()

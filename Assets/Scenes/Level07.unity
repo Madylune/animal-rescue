@@ -770,6 +770,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 988801451d8d74891a8a3a1f9e454b3b, type: 3}
+--- !u!114 &423939922 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5058828938851892696, guid: 988801451d8d74891a8a3a1f9e454b3b,
+    type: 3}
+  m_PrefabInstance: {fileID: 423939921}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e24edb1e0408479aabee4aab0833870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &427914327
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,6 +1352,11 @@ PrefabInstance:
       propertyPath: currentLevel
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7993582918872324064, guid: db5b669c5bb754f3f84db8664d591806,
+        type: 3}
+      propertyPath: gameOverPanel
+      value: 
+      objectReference: {fileID: 1106485864}
     - target: {fileID: 7993582918872324070, guid: db5b669c5bb754f3f84db8664d591806,
         type: 3}
       propertyPath: m_Name
@@ -1573,6 +1590,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 245318141, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 423939922}
+    - target: {fileID: 245318141, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636422542, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 423939922}
+    - target: {fileID: 1636422542, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMainMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 8198297645944365509, guid: 8434c39c40512426d9224ddbf9129620,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1721,6 +1754,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1106485864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 612799382, guid: 8434c39c40512426d9224ddbf9129620,
+    type: 3}
+  m_PrefabInstance: {fileID: 1106485860}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1335326207
 PrefabInstance:
   m_ObjectHideFlags: 0
