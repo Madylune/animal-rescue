@@ -25,9 +25,13 @@ public class PlatformSpawner : MonoBehaviour
 
     public float minX = -2f, maxX = 2f;
 
+    private int currentLevel;
+
     private void Start()
     {
         currentSpawnTimer = spawnTimer;
+
+        currentLevel = LevelManager.instance.currentLevel;
     }
 
     private void Update()
@@ -75,9 +79,13 @@ public class PlatformSpawner : MonoBehaviour
                     {
                         newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
                     }
-                    else
+                    else if (currentLevel >= 3)
                     {
                         newPlatform = Instantiate(spikePlatform, tmp, Quaternion.identity);
+                    }
+                    else
+                    {
+                        newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
                     }
                 }
                 else if (spawnCount == 4)
@@ -86,9 +94,13 @@ public class PlatformSpawner : MonoBehaviour
                     {
                         newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
                     }
-                    else
+                    else if (currentLevel >= 4)
                     {
                         newPlatform = Instantiate(fallingPlatform, tmp, Quaternion.identity);
+                    }
+                    else
+                    {
+                        newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
                     }
                 }
                 else if (spawnCount == 5)
@@ -97,9 +109,13 @@ public class PlatformSpawner : MonoBehaviour
                     {
                         newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
                     }
-                    else
+                    else if (currentLevel >= 5)
                     {
                         newPlatform = Instantiate(breakablePlatform, tmp, Quaternion.identity);
+                    }
+                    else
+                    {
+                        newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
                     }
 
                     if (waveCount <= waveNumber)
