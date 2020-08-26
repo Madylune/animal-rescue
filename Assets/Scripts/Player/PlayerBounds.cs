@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerBounds : MonoBehaviour
 {
-    public float minX = -3.2f, maxX = 3.2f, minY = -5.6f;
+    public float minX = -3.2f, maxX = 3.2f, minY = -5.6f, maxY = 5.6f;
 
     private bool outOfBounds;
 
@@ -28,13 +28,14 @@ public class PlayerBounds : MonoBehaviour
 
         transform.position = tmp;
 
-        if (tmp.y <= minY)
+        if (tmp.y <= minY || tmp.y >= maxY)
         {
             if (!outOfBounds)
             {
                 outOfBounds = true;
+
+                StartCoroutine(Die());
                 SoundManager.instance.DeathSound();
-                GameManager.instance.RestartGame();
             }
         }
     }
@@ -44,9 +45,7 @@ public class PlayerBounds : MonoBehaviour
         if (target.tag == "TopSpike")
         {
             StartCoroutine(Die());
-
             SoundManager.instance.DeathSound();
-            GameManager.instance.RestartGame();
         }
     }
 
@@ -55,6 +54,7 @@ public class PlayerBounds : MonoBehaviour
         GetComponent<PlayerMovement>().TakeDamage();
 
         yield return new WaitForSeconds(1);
-        transform.position = new Vector2(1000f, 1000f);
+        //transform.position = new Vector2(1000f, 1000f);
+        GameManager.instance.RestartGame();
     }
 }
