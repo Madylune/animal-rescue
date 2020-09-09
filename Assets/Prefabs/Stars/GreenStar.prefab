@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a81dcf62d93854b8b9063fc30a397d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 5
+  points: 10
   isGreen: 1
   isOrange: 0
   isPurple: 0
