@@ -56,6 +56,8 @@ MonoBehaviour:
     type: 3}
   fallingPlatform: {fileID: 3036115488005814820, guid: 154fa306ac2f745f4896595471ef6280,
     type: 3}
+  starsSpawner: {fileID: 1362869642495989709, guid: 16aba343ef67844499eab87a59d48594,
+    type: 3}
   isHard: 0
   isDungeon: 0
   spawnTimer: 1.3

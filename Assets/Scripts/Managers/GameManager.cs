@@ -1,17 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    private bool isSpawning;
-
     [SerializeField]
     public GameObject gameOverPanel;
-
-    public bool IsSpawning { get => isSpawning; set => isSpawning = value; }
 
     private void Awake()
     {

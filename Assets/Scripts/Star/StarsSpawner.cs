@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class StarsSpawner : MonoBehaviour
 {
@@ -13,78 +11,33 @@ public class StarsSpawner : MonoBehaviour
     [SerializeField]
     private GameObject purpleStar;
 
-    public float spawnTimer = 3f;
-
-    private float currentSpawnTimer;
-
-    private int spawnCount;
-
     public float minX = -2.5f, maxX = 2.5f;
 
-    private void Update()
+    public void SpawnStar()
     {
-        if (GameManager.instance.IsSpawning)
+        Vector3 tmp = transform.position;
+        tmp.x = Random.Range(minX, maxX);
+
+        int lot = Random.Range(1, 3);
+
+        GameObject newStar = null;
+
+        if (lot == 1)
         {
-            SpawnStars();
+            newStar = Instantiate(greenStar, tmp, Quaternion.identity);
         }
-        else
+        if (lot == 2)
         {
-            spawnCount = 4;
-            currentSpawnTimer = 0f;
+            newStar = Instantiate(orangeStar, tmp, Quaternion.identity);
         }
-    }
-
-    private void SpawnStars()
-    {
-        currentSpawnTimer += Time.deltaTime;
-
-        if (currentSpawnTimer >= spawnTimer)
+        if (lot == 3)
         {
-            Vector3 tmp = transform.position;
-            tmp.x = Random.Range(minX, maxX);
+            newStar = Instantiate(purpleStar, tmp, Quaternion.identity);
+        }
 
-            GameObject newStar = null;
-
-            spawnCount++;
-
-            if (spawnCount < 2)
-            {
-                if (Random.Range(0, 2) > 0)
-                {
-                    newStar = Instantiate(greenStar, tmp, Quaternion.identity);
-                }
-            }
-            else if (spawnCount == 2)
-            {
-                if (Random.Range(0, 2) > 0)
-                {
-                    newStar = Instantiate(orangeStar, tmp, Quaternion.identity);
-                }
-                else
-                {
-                    newStar = Instantiate(greenStar, tmp, Quaternion.identity);
-                }
-            }
-            else if (spawnCount == 3)
-            {
-                if (Random.Range(0, 2) > 0)
-                {
-                    newStar = Instantiate(purpleStar, tmp, Quaternion.identity);
-                }
-                else
-                {
-                    newStar = Instantiate(greenStar, tmp, Quaternion.identity);
-                }
-
-                spawnCount = 0;
-            }
-
-            if (newStar)
-            {
-                newStar.transform.parent = transform; // Spawned platforms will be StarsSpawner's children
-            }
-
-            currentSpawnTimer = 0f;
+        if (newStar)
+        {
+            newStar.transform.parent = transform; // Spawned platforms will be StarsSpawner's children
         }
     }
 }

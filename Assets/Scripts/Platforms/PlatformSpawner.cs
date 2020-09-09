@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlatformSpawner : MonoBehaviour
 {
@@ -10,6 +8,8 @@ public class PlatformSpawner : MonoBehaviour
     public GameObject breakablePlatform;
     public GameObject groundPlatform;
     public GameObject fallingPlatform;
+
+    public StarsSpawner starsSpawner;
 
     public bool isHard, isDungeon;
 
@@ -45,8 +45,6 @@ public class PlatformSpawner : MonoBehaviour
 
         if (currentSpawnTimer >= spawnTimer) //Spawn platform
         {
-            GameManager.instance.IsSpawning = true;
-
             BackgroundScroll.instance.isScrolling = true;
 
             Vector3 tmp = transform.position;
@@ -124,6 +122,11 @@ public class PlatformSpawner : MonoBehaviour
                     }
 
                     waveCount++;
+
+                    if (Random.Range(0, 2) < 1)
+                    {
+                        starsSpawner.SpawnStar();
+                    }
                 }
             }
             else if (waveCount == waveNumber)
@@ -131,8 +134,6 @@ public class PlatformSpawner : MonoBehaviour
                 tmp.x = 0;
 
                 newPlatform = Instantiate(groundPlatform, tmp, Quaternion.identity);
-
-                GameManager.instance.IsSpawning = false;
 
                 waveCount++;
             }
