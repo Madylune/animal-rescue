@@ -123,10 +123,7 @@ public class PlatformSpawner : MonoBehaviour
 
                     waveCount++;
 
-                    if (Random.Range(0, 2) < 1)
-                    {
-                        starsSpawner.SpawnStar();
-                    }
+                    starsSpawner.SpawnStar();
                 }
             }
             else if (waveCount == waveNumber)

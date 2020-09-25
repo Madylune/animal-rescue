@@ -1298,6 +1298,11 @@ PrefabInstance:
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 1106485866}
+    - target: {fileID: 7993582918872324064, guid: db5b669c5bb754f3f84db8664d591806,
+        type: 3}
+      propertyPath: actionBar
+      value: 
+      objectReference: {fileID: 1106485867}
     - target: {fileID: 7993582918872324070, guid: db5b669c5bb754f3f84db8664d591806,
         type: 3}
       propertyPath: m_Name
@@ -1750,6 +1755,12 @@ GameObject:
 --- !u!1 &1106485866 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 612799382, guid: 8434c39c40512426d9224ddbf9129620,
+    type: 3}
+  m_PrefabInstance: {fileID: 1106485860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1106485867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 355629698, guid: 8434c39c40512426d9224ddbf9129620,
     type: 3}
   m_PrefabInstance: {fileID: 1106485860}
   m_PrefabAsset: {fileID: 0}

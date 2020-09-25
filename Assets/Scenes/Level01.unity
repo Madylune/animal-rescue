@@ -1201,6 +1201,11 @@ PrefabInstance:
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 612799382}
+    - target: {fileID: 7993582918872324064, guid: db5b669c5bb754f3f84db8664d591806,
+        type: 3}
+      propertyPath: actionBar
+      value: 
+      objectReference: {fileID: 8198297646347950160}
     - target: {fileID: 7993582918872324070, guid: db5b669c5bb754f3f84db8664d591806,
         type: 3}
       propertyPath: m_Name
@@ -1278,6 +1283,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1806891253}
+    - target: {fileID: 355629698, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 355629699, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 49.819824
+      objectReference: {fileID: 0}
     - target: {fileID: 356778798, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1434,3 +1447,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8198297646347950160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 355629698, guid: 8434c39c40512426d9224ddbf9129620,
+    type: 3}
+  m_PrefabInstance: {fileID: 8198297646347950157}
+  m_PrefabAsset: {fileID: 0}

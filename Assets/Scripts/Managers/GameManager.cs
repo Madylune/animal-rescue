@@ -7,11 +7,22 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public GameObject gameOverPanel;
 
+    [SerializeField]
+    private GameObject actionBar;
+
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
+        }
+    }
+
+    private void Start()
+    {
+        if (Application.platform != RuntimePlatform.IPhonePlayer)
+        {
+            actionBar.SetActive(false);
         }
     }
 

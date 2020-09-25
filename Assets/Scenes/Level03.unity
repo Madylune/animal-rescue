@@ -177,7 +177,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a3ba6b033246248a3b823e75d3fa457b, type: 2}
+  - {fileID: 2100000, guid: e78b757f812a548be9510b66fe851fee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -328,7 +328,7 @@ PrefabInstance:
     - target: {fileID: 1450251626099053547, guid: cc7bc550f3e584422a71d5efcf8c9443,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.1
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 1450251626099053547, guid: cc7bc550f3e584422a71d5efcf8c9443,
         type: 3}
@@ -546,7 +546,7 @@ PrefabInstance:
     - target: {fileID: 2278417067136193941, guid: 02c28c4486eda48869feaa80c97114a7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.75
+      value: -0.41
       objectReference: {fileID: 0}
     - target: {fileID: 2278417067136193941, guid: 02c28c4486eda48869feaa80c97114a7,
         type: 3}
@@ -1172,6 +1172,11 @@ PrefabInstance:
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 8198297646347950162}
+    - target: {fileID: 7993582918872324064, guid: db5b669c5bb754f3f84db8664d591806,
+        type: 3}
+      propertyPath: actionBar
+      value: 
+      objectReference: {fileID: 8198297646347950163}
     - target: {fileID: 7993582918872324070, guid: db5b669c5bb754f3f84db8664d591806,
         type: 3}
       propertyPath: m_Name
@@ -1448,6 +1453,12 @@ GameObject:
 --- !u!1 &8198297646347950162 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 612799382, guid: 8434c39c40512426d9224ddbf9129620,
+    type: 3}
+  m_PrefabInstance: {fileID: 8198297646347950157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8198297646347950163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 355629698, guid: 8434c39c40512426d9224ddbf9129620,
     type: 3}
   m_PrefabInstance: {fileID: 8198297646347950157}
   m_PrefabAsset: {fileID: 0}

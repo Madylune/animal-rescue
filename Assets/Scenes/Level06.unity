@@ -259,7 +259,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ef10c0e9ad0104605a41962980847491, type: 2}
+  - {fileID: 2100000, guid: 772ac9546d77d4569be6f2318e3c2ce3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -339,6 +339,11 @@ PrefabInstance:
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 858307920}
+    - target: {fileID: 7993582918872324064, guid: db5b669c5bb754f3f84db8664d591806,
+        type: 3}
+      propertyPath: actionBar
+      value: 
+      objectReference: {fileID: 858307921}
     - target: {fileID: 7993582918872324070, guid: db5b669c5bb754f3f84db8664d591806,
         type: 3}
       propertyPath: m_Name
@@ -1669,6 +1674,12 @@ GameObject:
 --- !u!1 &858307920 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 612799382, guid: 8434c39c40512426d9224ddbf9129620,
+    type: 3}
+  m_PrefabInstance: {fileID: 858307914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &858307921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 355629698, guid: 8434c39c40512426d9224ddbf9129620,
     type: 3}
   m_PrefabInstance: {fileID: 858307914}
   m_PrefabAsset: {fileID: 0}
