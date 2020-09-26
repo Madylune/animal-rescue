@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump()
     {
-        if (jumpCount > 0 && !isDying)
+        if (jumpCount > 0 && !isDying && Time.timeScale > 0f)
         {
             jumpCount--;
 
