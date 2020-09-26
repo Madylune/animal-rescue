@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerBounds : MonoBehaviour
 {
-    public float minX = -3.2f, maxX = 3.2f, minY = -5.6f, maxY = 5.6f;
+    public float minX = -3f, maxX = 3f, minY = -5.6f, maxY = 5.6f;
 
     private bool outOfBounds;
 

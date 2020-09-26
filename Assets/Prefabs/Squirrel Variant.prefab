@@ -132,6 +132,16 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4114008520419204330, guid: d5ddb00eebe074200a25b3f8f08ee226,
+        type: 3}
+      propertyPath: minX
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114008520419204330, guid: d5ddb00eebe074200a25b3f8f08ee226,
+        type: 3}
+      propertyPath: maxX
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4114008520419204331, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: moveSpeed

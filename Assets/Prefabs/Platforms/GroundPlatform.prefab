@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 9186840211341061517}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -4.6, z: 0}
-  m_LocalScale: {x: 0.7503635, y: 0.47492722, z: 1}
+  m_LocalScale: {x: 1.3865238, y: 0.47492722, z: 1}
   m_Children:
   - {fileID: 821280089248796869}
   m_Father: {fileID: 0}
@@ -50,6 +50,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -188,7 +189,7 @@ PrefabInstance:
     - target: {fileID: 3855476597981183947, guid: ba8974bd9851140118d725c46f84e329,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.3050644
+      value: 1.7284
       objectReference: {fileID: 0}
     - target: {fileID: 3855476597981183947, guid: ba8974bd9851140118d725c46f84e329,
         type: 3}
@@ -244,6 +245,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855476597981183947, guid: ba8974bd9851140118d725c46f84e329,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba8974bd9851140118d725c46f84e329, type: 3}

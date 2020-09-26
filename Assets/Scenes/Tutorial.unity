@@ -1664,10 +1664,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1951548496}
     m_Modifications:
+    - target: {fileID: 295617633608161050, guid: 69b55b2881ec940b7a1c91d5964d7872,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 295617633608161051, guid: 69b55b2881ec940b7a1c91d5964d7872,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.12
+      value: -2.06
       objectReference: {fileID: 0}
     - target: {fileID: 295617633608161051, guid: 69b55b2881ec940b7a1c91d5964d7872,
         type: 3}
@@ -1734,6 +1739,11 @@ PrefabInstance:
       propertyPath: starCountText
       value: 
       objectReference: {fileID: 1246329932}
+    - target: {fileID: 295617633608161063, guid: 69b55b2881ec940b7a1c91d5964d7872,
+        type: 3}
+      propertyPath: minX
+      value: -3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69b55b2881ec940b7a1c91d5964d7872, type: 3}
 --- !u!4 &295617632486032263 stripped
@@ -1918,10 +1928,20 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 893389971542212511, guid: 6968e695590214bd399ba871e419b6b4,
+        type: 3}
+      propertyPath: minX
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 893389971542212514, guid: 6968e695590214bd399ba871e419b6b4,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 893389971542212515, guid: 6968e695590214bd399ba871e419b6b4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.013
+      value: -1.96
       objectReference: {fileID: 0}
     - target: {fileID: 893389971542212515, guid: 6968e695590214bd399ba871e419b6b4,
         type: 3}
