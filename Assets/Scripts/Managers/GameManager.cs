@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,19 +27,33 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void GameOver()
+    private void Update()
     {
-        gameOverPanel.SetActive(true);
-        Time.timeScale = 0f; // Freeze time and game
+        if (gameOverPanel.activeSelf)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                RestartGame();
+            }
+        }
+    }
+
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void RestartGame()
     {
-        Invoke("RestartAfterTime", 2f);
+        Time.timeScale = 1f;
+        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(sceneIndex);
     }
 
-    void RestartAfterTime()
+    public void GameOver()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        gameOverPanel.SetActive(true);
+        Time.timeScale = 0f; // Freeze time and game
     }
 }

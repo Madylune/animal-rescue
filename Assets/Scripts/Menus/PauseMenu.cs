@@ -51,13 +51,6 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
     }
 
-    public void RestartGame()
-    {
-        Time.timeScale = 1f;
-        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(sceneIndex);
-    }
-
     public void ToggleSound()
     {
         var img = musicButton.GetComponent<Image>();
@@ -78,11 +71,5 @@ public class PauseMenu : MonoBehaviour
         }
 
         img.color = tmp;
-    }
-
-    public void LoadMainMenu()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu");
     }
 }
