@@ -8,6 +8,18 @@ public class MainMenu : MonoBehaviour
     public string sceneName;
     public GameObject settingsPanel;
 
+    [SerializeField]
+    private GameObject quitButton, tutorialButton;
+
+    private void Start()
+    {
+        if (Application.platform != RuntimePlatform.IPhonePlayer)
+        {
+            quitButton.SetActive(false);
+            tutorialButton.SetActive(true);
+        }
+    }
+
     public void StartGame()
     {
         SceneManager.LoadScene(sceneName);
@@ -31,5 +43,10 @@ public class MainMenu : MonoBehaviour
     public void GoToLevelSelection()
     {
         SceneManager.LoadScene("LevelSelection");
+    }
+
+    public void GoToTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
 }

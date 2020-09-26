@@ -43,12 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aff34f4533fa4d64a125f8300da679d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  greenStar: {fileID: 1155064760468573012, guid: 9f2e80b410b9b4eeabeab40d6d985f12,
-    type: 3}
-  orangeStar: {fileID: 2278417067136193945, guid: 02c28c4486eda48869feaa80c97114a7,
-    type: 3}
-  purpleStar: {fileID: 8874560190595229239, guid: 7cb7594f12f33421a982f6619de39ef7,
-    type: 3}
-  spawnTimer: 3
+  timeBetweenSpawn: 3
+  stars:
+  - {fileID: 1155064760468573012, guid: 9f2e80b410b9b4eeabeab40d6d985f12, type: 3}
+  - {fileID: 2278417067136193945, guid: 02c28c4486eda48869feaa80c97114a7, type: 3}
+  - {fileID: 8874560190595229239, guid: 7cb7594f12f33421a982f6619de39ef7, type: 3}
   minX: -2
   maxX: 2

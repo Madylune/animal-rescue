@@ -49,4 +49,8 @@ public class SceneSwitcherManager : MonoBehaviour
         }
     }
 
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

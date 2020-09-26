@@ -55,6 +55,7 @@ public class PlatformScript : MonoBehaviour
             else
             {
                 BackgroundScroll.instance.isScrolling = false;
+                StarsSpawner.instance.isSpawning = false;
             }
         }
     }
@@ -78,7 +79,7 @@ public class PlatformScript : MonoBehaviour
             {
                 target.GetComponent<PlayerMovement>().TakeDamage();
                 SoundManager.instance.GameOverSound();
-                GameManager.instance.RestartGame();
+                GameManager.instance.GameOver();
             }
         }
     }

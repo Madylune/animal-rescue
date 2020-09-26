@@ -1,39 +1,61 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class StarsSpawner : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject greenStar;
+    public static StarsSpawner instance;
+
+    public bool isSpawning;
+    public enum SpawnState { SPAWNING, WAITING }
 
     [SerializeField]
-    private GameObject orangeStar;
-
-    [SerializeField]
-    private GameObject purpleStar;
+    private GameObject[] stars;
 
     public float minX = -2.5f, maxX = 2.5f;
 
-    public void SpawnStar()
+    private SpawnState state = SpawnState.SPAWNING;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
+    private void Start()
+    {
+        isSpawning = true;
+    }
+
+    private void Update()
+    {
+        if (state == SpawnState.SPAWNING)
+        {
+            StartCoroutine(SpawnStar());
+        }
+    }
+
+    IEnumerator SpawnStar()
+    {
+        if (isSpawning)
+        {
+            state = SpawnState.WAITING;
+
+            int starIndex = Random.Range(1, 3);
+            InstantiateStar(stars[starIndex]);
+
+            yield return new WaitForSeconds(Random.Range(7, 10));
+            state = SpawnState.SPAWNING;
+        }
+    }
+
+    void InstantiateStar(GameObject star)
     {
         Vector3 tmp = transform.position;
-        tmp.x = Random.Range(minX, maxX);
 
-        int lot = Random.Range(1, 3);
-
-        GameObject newStar = null;
-
-        if (lot == 1)
-        {
-            newStar = Instantiate(greenStar, tmp, Quaternion.identity);
-        }
-        if (lot == 2)
-        {
-            newStar = Instantiate(orangeStar, tmp, Quaternion.identity);
-        }
-        if (lot == 3)
-        {
-            newStar = Instantiate(purpleStar, tmp, Quaternion.identity);
-        }
+        Vector2 position = new Vector2(Random.Range(minX, maxX), tmp.y);
+        GameObject newStar = Instantiate(star, position, Quaternion.identity);
 
         if (newStar)
         {

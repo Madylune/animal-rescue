@@ -14,7 +14,7 @@ PrefabInstance:
     - target: {fileID: 4114008520419204304, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: m_Name
-      value: Squirrel
+      value: Squirrel Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4114008520419204304, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
@@ -64,7 +64,7 @@ PrefabInstance:
     - target: {fileID: 4114008520419204310, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.17879494
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 4114008520419204310, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
@@ -135,7 +135,7 @@ PrefabInstance:
     - target: {fileID: 4114008520419204331, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: moveSpeed
-      value: 2.5
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 7358525420496214283, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}

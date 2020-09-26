@@ -23,7 +23,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        int sceneIndex = SceneManager.GetActiveScene().buildIndex - 1;
+        int sceneIndex = SceneManager.GetActiveScene().buildIndex - 2;
         levelNumber.text = string.Format("LEVEL {0}", sceneIndex);
 
         currentLevel = sceneIndex;

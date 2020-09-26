@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 4114008520419204304, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: m_Name
-      value: Bird
+      value: Bird Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4114008520419204304, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
@@ -85,7 +85,7 @@ PrefabInstance:
     - target: {fileID: 4114008520419204331, guid: d5ddb00eebe074200a25b3f8f08ee226,
         type: 3}
       propertyPath: moveSpeed
-      value: 2.5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5ddb00eebe074200a25b3f8f08ee226, type: 3}

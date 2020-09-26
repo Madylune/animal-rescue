@@ -9,8 +9,6 @@ public class PlatformSpawner : MonoBehaviour
     public GameObject groundPlatform;
     public GameObject fallingPlatform;
 
-    public StarsSpawner starsSpawner;
-
     public bool isHard, isDungeon;
 
     public float spawnTimer = 1.8f;
@@ -122,8 +120,6 @@ public class PlatformSpawner : MonoBehaviour
                     }
 
                     waveCount++;
-
-                    starsSpawner.SpawnStar();
                 }
             }
             else if (waveCount == waveNumber)

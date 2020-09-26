@@ -11,13 +11,19 @@ public class StarScript : MonoBehaviour
     [SerializeField]
     private bool isGreen, isOrange, isPurple;
 
+    [SerializeField]
+    private bool isTutorial;
+
     public float moveSpeed = 3f;
 
     public float boundY = 6f; // Max y to see the platform
 
     private void Update()
     {
-        Move();
+        if (!isTutorial)
+        {
+            Move();
+        }
     }
 
     private void Move()
