@@ -42,7 +42,7 @@ public class StarsSpawner : MonoBehaviour
         {
             state = SpawnState.WAITING;
 
-            int starIndex = Random.Range(1, 3);
+            int starIndex = Random.Range(0, 2);
             InstantiateStar(stars[starIndex]);
 
             yield return new WaitForSeconds(Random.Range(7, 10));

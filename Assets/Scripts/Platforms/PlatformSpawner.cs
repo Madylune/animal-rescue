@@ -8,6 +8,7 @@ public class PlatformSpawner : MonoBehaviour
     public GameObject breakablePlatform;
     public GameObject groundPlatform;
     public GameObject fallingPlatform;
+    public GameObject smallPlatform;
 
     public bool isHard, isDungeon;
 
@@ -56,13 +57,27 @@ public class PlatformSpawner : MonoBehaviour
 
                 if (spawnCount < 2)
                 {
-                    newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
+                    if (currentLevel >= 10 && Random.Range(0, 2) >= 1)
+                    {
+                        newPlatform = Instantiate(smallPlatform, tmp, Quaternion.identity);
+                    }
+                    else
+                    {
+                        newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
+                    }
                 }
                 else if (spawnCount == 2)
                 {
                     if (Random.Range(0, 2) > (isHard ? 1 : 0))
                     {
-                        newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
+                        if (currentLevel >= 10 && Random.Range(0, 2) >= 1)
+                        {
+                            newPlatform = Instantiate(smallPlatform, tmp, Quaternion.identity);
+                        }
+                        else
+                        {
+                            newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
+                        }
                     }
                     else
                     {
@@ -81,7 +96,14 @@ public class PlatformSpawner : MonoBehaviour
                     }
                     else
                     {
-                        newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
+                        if (currentLevel >= 10 && Random.Range(0, 2) >= 1)
+                        {
+                            newPlatform = Instantiate(smallPlatform, tmp, Quaternion.identity);
+                        }
+                        else
+                        {
+                            newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
+                        }
                     }
                 }
                 else if (spawnCount == 4)
@@ -96,7 +118,14 @@ public class PlatformSpawner : MonoBehaviour
                     }
                     else
                     {
-                        newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
+                        if (currentLevel >= 10 && Random.Range(0, 2) >= 1)
+                        {
+                            newPlatform = Instantiate(smallPlatform, tmp, Quaternion.identity);
+                        }
+                        else
+                        {
+                            newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
+                        }
                     }
                 }
                 else if (spawnCount == 5)
@@ -111,7 +140,14 @@ public class PlatformSpawner : MonoBehaviour
                     }
                     else
                     {
-                        newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
+                        if (currentLevel >= 10 && Random.Range(0, 2) >= 1)
+                        {
+                            newPlatform = Instantiate(smallPlatform, tmp, Quaternion.identity);
+                        }
+                        else
+                        {
+                            newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
+                        }
                     }
 
                     if (waveCount <= waveNumber)
