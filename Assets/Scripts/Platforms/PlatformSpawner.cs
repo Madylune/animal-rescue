@@ -86,7 +86,7 @@ public class PlatformSpawner : MonoBehaviour
                 }
                 else if (spawnCount == 3)
                 {
-                    if (Random.Range(0, 2) > (isDungeon ? 1 : 0))
+                    if (Random.Range(0, 2) >= (isDungeon ? 1 : 0))
                     {
                         newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
                     }
@@ -130,7 +130,7 @@ public class PlatformSpawner : MonoBehaviour
                 }
                 else if (spawnCount == 5)
                 {
-                    if (Random.Range(0, 2) > (isHard ? 1 : 0))
+                    if (Random.Range(0, 2) >= (isHard ? 1 : 0))
                     {
                         newPlatform = Instantiate(regularPlatform, tmp, Quaternion.identity);
                     }

@@ -834,12 +834,12 @@ PrefabInstance:
     - target: {fileID: 295617633608161051, guid: 69b55b2881ec940b7a1c91d5964d7872,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.183
+      value: -1.2939999
       objectReference: {fileID: 0}
     - target: {fileID: 295617633608161051, guid: 69b55b2881ec940b7a1c91d5964d7872,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.594
+      value: -1.585
       objectReference: {fileID: 0}
     - target: {fileID: 295617633608161051, guid: 69b55b2881ec940b7a1c91d5964d7872,
         type: 3}
@@ -1489,6 +1489,12 @@ PrefabInstance:
       propertyPath: isDungeon
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1617914881910044745, guid: 12863e6d79875491c9871afce9005f8e,
+        type: 3}
+      propertyPath: smallPlatform
+      value: 
+      objectReference: {fileID: 6187415199378804451, guid: 8e90cbbfbbe244df08314960411357ba,
+        type: 3}
     - target: {fileID: 1617914881910044746, guid: 12863e6d79875491c9871afce9005f8e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2222,12 +2228,12 @@ PrefabInstance:
     - target: {fileID: 893389971542212515, guid: 6968e695590214bd399ba871e419b6b4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.195
+      value: -1.306
       objectReference: {fileID: 0}
     - target: {fileID: 893389971542212515, guid: 6968e695590214bd399ba871e419b6b4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.397
+      value: -1.388
       objectReference: {fileID: 0}
     - target: {fileID: 893389971542212515, guid: 6968e695590214bd399ba871e419b6b4,
         type: 3}

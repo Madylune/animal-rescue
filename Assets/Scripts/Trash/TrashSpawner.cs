@@ -6,21 +6,46 @@ public class TrashSpawner : MonoBehaviour
     [SerializeField]
     private GameObject[] trashItems;
 
+    [SerializeField]
+    private bool isHard;
+
+    [SerializeField]
+    private GameObject flag;
+
     private float minX = -2.5f, maxX = 2.5f;
     private bool isSpawning;
     private enum SpawnState { SPAWNING, WAITING }
     private SpawnState state = SpawnState.SPAWNING;
 
+    private int currentLevel;
+
+    float currentTime = 0f;
+    float startTime = 0f;
+    float endTime = 45f;
+
     private void Start()
     {
         isSpawning = true;
+        currentLevel = LevelManager.instance.currentLevel;
+
+        currentTime = startTime;
     }
 
     private void Update()
     {
-        if (state == SpawnState.SPAWNING)
+        currentTime += 1 * Time.deltaTime;
+
+        if(currentTime >= endTime)
         {
-            StartCoroutine(SpawnTrash());
+            state = SpawnState.WAITING;
+            flag.SetActive(true);
+        }
+        else
+        {
+            if (state == SpawnState.SPAWNING)
+            {
+                StartCoroutine(SpawnTrash());
+            }
         }
     }
 
@@ -33,7 +58,15 @@ public class TrashSpawner : MonoBehaviour
             int trashIndex = Random.Range(0, 5);
             InstantiateTrash(trashItems[trashIndex]);
 
-            yield return new WaitForSeconds(Random.Range(5, 10));
+            if (isHard)
+            {
+                yield return new WaitForSeconds(Random.Range(1, 2));
+            }
+            else
+            {
+                yield return new WaitForSeconds(Random.Range(5, 10));
+            }
+
             state = SpawnState.SPAWNING;
         }
     }
@@ -42,7 +75,7 @@ public class TrashSpawner : MonoBehaviour
     {
 
         Vector3 tmp = transform.position;
-        Vector2 position = new Vector2(Random.Range(minX, maxX), tmp.y);
+        Vector2 position = new Vector2(Random.Range(minX, maxX), tmp.y + Random.Range(0, 1));
 
         GameObject newTrash = Instantiate(trashItem, position, transform.rotation);
 
