@@ -7,7 +7,7 @@ public class TrashSpawner : MonoBehaviour
     private GameObject[] trashItems;
 
     [SerializeField]
-    private bool isHard;
+    private bool isHard, isGround;
 
     [SerializeField]
     private GameObject flag;
@@ -28,17 +28,30 @@ public class TrashSpawner : MonoBehaviour
         isSpawning = true;
         currentLevel = LevelManager.instance.currentLevel;
 
-        currentTime = startTime;
+        if (isGround)
+        {
+            currentTime = startTime;
+        }
     }
 
     private void Update()
     {
-        currentTime += 1 * Time.deltaTime;
-
-        if(currentTime >= endTime)
+        if (isGround)
         {
-            state = SpawnState.WAITING;
-            flag.SetActive(true);
+            currentTime += 1 * Time.deltaTime;
+
+            if (currentTime >= endTime)
+            {
+                state = SpawnState.WAITING;
+                flag.SetActive(true);
+            }
+            else
+            {
+                if (state == SpawnState.SPAWNING)
+                {
+                    StartCoroutine(SpawnTrash());
+                }
+            }
         }
         else
         {
@@ -58,7 +71,7 @@ public class TrashSpawner : MonoBehaviour
             int trashIndex = Random.Range(0, 5);
             InstantiateTrash(trashItems[trashIndex]);
 
-            if (isHard)
+            if (isGround)
             {
                 yield return new WaitForSeconds(Random.Range(1, 2));
             }
