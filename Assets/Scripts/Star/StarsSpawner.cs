@@ -11,7 +11,10 @@ public class StarsSpawner : MonoBehaviour
     [SerializeField]
     private GameObject[] stars;
 
-    public float minX = -2.5f, maxX = 2.5f;
+    [SerializeField]
+    private bool isFalling;
+
+    private float minX = -2.6f, maxX = 2.6f;
 
     private SpawnState state = SpawnState.SPAWNING;
 
@@ -56,6 +59,10 @@ public class StarsSpawner : MonoBehaviour
 
         Vector2 position = new Vector2(Random.Range(minX, maxX), tmp.y);
         GameObject newStar = Instantiate(star, position, Quaternion.identity);
+        if (isFalling)
+        {
+            newStar.GetComponent<StarScript>().isFalling = true;
+        }
 
         if (newStar)
         {

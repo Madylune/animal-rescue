@@ -8,12 +8,12 @@ public class StarScript : MonoBehaviour
     [SerializeField]
     private bool isGreen, isOrange, isPurple;
 
-    [SerializeField]
-    private bool isTutorial;
+    public bool isTutorial, isFalling;
 
     public float moveSpeed = 3f;
 
-    public float boundY = 6f; // Max y to see the platform
+    private float maxY = 6f;
+    private float minY = -6f;
 
     private void Update()
     {
@@ -26,12 +26,26 @@ public class StarScript : MonoBehaviour
     private void Move()
     {
         Vector2 tmp = transform.position;
-        tmp.y += moveSpeed * Time.deltaTime;
-        transform.position = tmp;
 
-        if (tmp.y >= boundY)
+        if (isFalling)
         {
-            Destroy(gameObject);
+            tmp.y -= moveSpeed * Time.deltaTime;
+            transform.position = tmp;
+
+            if (tmp.y <= minY)
+            {
+                Destroy(gameObject);
+            }
+        }
+        else
+        {
+            tmp.y += moveSpeed * Time.deltaTime;
+            transform.position = tmp;
+
+            if (tmp.y >= maxY)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

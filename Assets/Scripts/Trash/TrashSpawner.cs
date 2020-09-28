@@ -48,6 +48,8 @@ public class TrashSpawner : MonoBehaviour
                 state = SpawnState.WAITING;
                 flag.SetActive(true);
 
+                StarsSpawner.instance.isSpawning = false;
+
                 if (spikes != null)
                 {
                     foreach (GameObject spike in spikes)
