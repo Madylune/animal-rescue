@@ -12,7 +12,7 @@ public class TrashSpawner : MonoBehaviour
     [SerializeField]
     private GameObject flag;
 
-    private float minX = -2.5f, maxX = 2.5f;
+    private float minX = -3f, maxX = 3f;
     private bool isSpawning;
     private enum SpawnState { SPAWNING, WAITING }
     private SpawnState state = SpawnState.SPAWNING;
