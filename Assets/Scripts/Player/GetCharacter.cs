@@ -26,7 +26,7 @@ public class GetCharacter : MonoBehaviour
         {
             jumpButton.text = "FLY";
         }
-        if (characterIndex == 1)
+        if (characterIndex >= 1)
         {
             jumpButton.text = "JUMP";
         }

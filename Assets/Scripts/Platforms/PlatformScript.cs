@@ -85,10 +85,10 @@ public class PlatformScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D target)
     {
-        target.transform.GetComponent<PlayerMovement>().onLanding();
-
         if (target.gameObject.tag == "Player")
         {
+            target.transform.GetComponent<PlayerMovement>().onLanding();
+
             if (isBreakable)
             {
                 SoundManager.instance.LandSound();
