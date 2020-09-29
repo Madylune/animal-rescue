@@ -90,7 +90,14 @@ public class TrashSpawner : MonoBehaviour
             }
             else
             {
-                yield return new WaitForSeconds(Random.Range(5, 10));
+                if (isHard)
+                {
+                    yield return new WaitForSeconds(Random.Range(3, 5));
+                }
+                else
+                {
+                    yield return new WaitForSeconds(Random.Range(5, 10));
+                }
             }
 
             state = SpawnState.SPAWNING;
