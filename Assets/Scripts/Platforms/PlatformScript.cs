@@ -75,6 +75,7 @@ public class PlatformScript : MonoBehaviour
         {
             if (isSpike)
             {
+                target.transform.GetComponent<PlayerMovement>().onLanding();
                 target.GetComponent<PlayerMovement>().TakeDamage();
                 SoundManager.instance.GameOverSound();
                 GameManager.instance.GameOver();
@@ -84,6 +85,8 @@ public class PlatformScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D target)
     {
+        target.transform.GetComponent<PlayerMovement>().onLanding();
+
         if (target.gameObject.tag == "Player")
         {
             if (isBreakable)

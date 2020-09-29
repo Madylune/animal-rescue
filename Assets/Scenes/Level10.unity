@@ -1095,6 +1095,7 @@ GameObject:
   - component: {fileID: 1872323943}
   - component: {fileID: 1872323942}
   - component: {fileID: 1872323941}
+  - component: {fileID: 1872323944}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -1405,6 +1406,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1872323944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872323939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb122589c32354983a396a080bdf18cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1930090106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1417,6 +1430,11 @@ PrefabInstance:
       propertyPath: starCountText
       value: 
       objectReference: {fileID: 1106485861}
+    - target: {fileID: 893389971542212510, guid: 6968e695590214bd399ba871e419b6b4,
+        type: 3}
+      propertyPath: jumpCount
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 893389971542212514, guid: 6968e695590214bd399ba871e419b6b4,
         type: 3}
       propertyPath: m_FlipX

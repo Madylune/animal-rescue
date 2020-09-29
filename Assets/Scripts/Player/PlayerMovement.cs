@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void PlatformMove(float x)
+    public void PlatformMove(float x) //Move player on moving platforms
     {
         MyRb.velocity = new Vector2(x, MyRb.velocity.y);
     }
@@ -94,7 +94,13 @@ public class PlayerMovement : MonoBehaviour
 
             MyRb.velocity = Vector2.up * jumpVelocity;
             SoundManager.instance.FlapSound();
+            anim.SetBool("IsJumping", true);
         }
+    }
+
+    public void onLanding()
+    {
+        anim.SetBool("IsJumping", false);
     }
 
     public void TakeDamage()
