@@ -57,7 +57,7 @@ public class PlatformSpawner : MonoBehaviour
 
                 if (spawnCount < 2)
                 {
-                    if (currentLevel >= 10 && Random.Range(0, 2) >= 1)
+                    if (currentLevel >= 7 && Random.Range(0, 2) >= 1)
                     {
                         newPlatform = Instantiate(smallPlatform, tmp, Quaternion.identity);
                     }
@@ -70,7 +70,7 @@ public class PlatformSpawner : MonoBehaviour
                 {
                     if (Random.Range(0, 2) > (isHard ? 1 : 0))
                     {
-                        if (currentLevel >= 10 && Random.Range(0, 2) >= 1)
+                        if (currentLevel >= 7 && Random.Range(0, 2) >= 1)
                         {
                             newPlatform = Instantiate(smallPlatform, tmp, Quaternion.identity);
                         }
@@ -96,7 +96,7 @@ public class PlatformSpawner : MonoBehaviour
                     }
                     else
                     {
-                        if (currentLevel >= 10 && Random.Range(0, 2) >= 1)
+                        if (currentLevel >= 7 && Random.Range(0, 2) >= 1)
                         {
                             newPlatform = Instantiate(smallPlatform, tmp, Quaternion.identity);
                         }
@@ -118,7 +118,7 @@ public class PlatformSpawner : MonoBehaviour
                     }
                     else
                     {
-                        if (currentLevel >= 10 && Random.Range(0, 2) >= 1)
+                        if (currentLevel >= 7 && Random.Range(0, 2) >= 1)
                         {
                             newPlatform = Instantiate(smallPlatform, tmp, Quaternion.identity);
                         }
@@ -140,7 +140,7 @@ public class PlatformSpawner : MonoBehaviour
                     }
                     else
                     {
-                        if (currentLevel >= 10 && Random.Range(0, 2) >= 1)
+                        if (currentLevel >= 7 && Random.Range(0, 2) >= 1)
                         {
                             newPlatform = Instantiate(smallPlatform, tmp, Quaternion.identity);
                         }
