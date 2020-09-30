@@ -1430,6 +1430,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Pause
       objectReference: {fileID: 0}
+    - target: {fileID: 1611247896, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: db91b7c4621ab456e9eab8a363d3be9b, type: 2}
     - target: {fileID: 1636422542, guid: 8434c39c40512426d9224ddbf9129620, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
