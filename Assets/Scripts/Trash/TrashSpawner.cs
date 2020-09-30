@@ -15,6 +15,9 @@ public class TrashSpawner : MonoBehaviour
     [SerializeField]
     private GameObject[] spikes;
 
+    [SerializeField]
+    private GameObject rat;
+
     private float minX = -3f, maxX = 3f;
     private bool isSpawning;
     private enum SpawnState { SPAWNING, WAITING }
@@ -59,6 +62,11 @@ public class TrashSpawner : MonoBehaviour
                     {
                         spike.SetActive(false);
                     }
+                }
+
+                if (rat != null)
+                {
+                    rat.SetActive(false);
                 }
             }
             else
