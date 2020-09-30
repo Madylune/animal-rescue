@@ -18,7 +18,14 @@ public class FloatingText : MonoBehaviour
 
     private void Update()
     {
-        Move();
+        if (Time.timeScale > 0f)
+        {
+            Move();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Move()
