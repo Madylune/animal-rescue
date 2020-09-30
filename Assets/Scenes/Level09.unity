@@ -966,6 +966,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1106485860}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1106485867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8198297645944365513, guid: 8434c39c40512426d9224ddbf9129620,
+    type: 3}
+  m_PrefabInstance: {fileID: 1106485860}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1232488905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1354,6 +1360,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 836053291835928831, guid: 988801451d8d74891a8a3a1f9e454b3b,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1106485867}
     - target: {fileID: 5058828938851892696, guid: 988801451d8d74891a8a3a1f9e454b3b,
         type: 3}
       propertyPath: pausePanel

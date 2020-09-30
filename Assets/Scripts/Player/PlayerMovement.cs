@@ -96,6 +96,10 @@ public class PlayerMovement : MonoBehaviour
             SoundManager.instance.FlapSound();
             anim.SetBool("IsJumping", true);
         }
+        else if (jumpCount <= 0)
+        {
+            UIManager.instance.CreateFloatingText();
+        }
     }
 
     public void onLanding()

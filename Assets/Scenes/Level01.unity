@@ -411,6 +411,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8198297646347950157}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1745285507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8198297645944365513, guid: 8434c39c40512426d9224ddbf9129620,
+    type: 3}
+  m_PrefabInstance: {fileID: 8198297646347950157}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1806891253 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5058828938851892696, guid: 988801451d8d74891a8a3a1f9e454b3b,
@@ -795,6 +801,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 1617914881910044744, guid: 12863e6d79875491c9871afce9005f8e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1617914881910044745, guid: 12863e6d79875491c9871afce9005f8e,
         type: 3}
       propertyPath: fallingPlatform
@@ -1140,6 +1151,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 836053291835928831, guid: 988801451d8d74891a8a3a1f9e454b3b,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1745285507}
     - target: {fileID: 5058828938851892696, guid: 988801451d8d74891a8a3a1f9e454b3b,
         type: 3}
       propertyPath: pausePanel

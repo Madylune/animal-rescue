@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5058828938851892699}
   - component: {fileID: 5058828938851892696}
+  - component: {fileID: 836053291835928831}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -45,3 +46,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 0}
   musicButton: {fileID: 0}
+--- !u!114 &836053291835928831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5058828938851892697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd174e79303ce4789a17f5f7fc5df8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatingText: {fileID: 5994986442368847742, guid: f273fc1868f274c4f860e8b6edb7a50f,
+    type: 3}
