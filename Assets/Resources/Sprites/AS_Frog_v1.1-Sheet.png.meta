@@ -1,0 +1,979 @@
+fileFormatVersion: 2
+guid: fc303cbf7eb92436088665926fa402d7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1223813469400565976
+    second: AS_Frog_v1.1-Sheet_0
+  - first:
+      213: -3632873847210220340
+    second: AS_Frog_v1.1-Sheet_1
+  - first:
+      213: 4494893583266962759
+    second: AS_Frog_v1.1-Sheet_2
+  - first:
+      213: -5539657353397348445
+    second: AS_Frog_v1.1-Sheet_3
+  - first:
+      213: -1012576741648970581
+    second: AS_Frog_v1.1-Sheet_4
+  - first:
+      213: 1231155295256819991
+    second: AS_Frog_v1.1-Sheet_5
+  - first:
+      213: 1563537912274289798
+    second: AS_Frog_v1.1-Sheet_6
+  - first:
+      213: 2761851778086244159
+    second: AS_Frog_v1.1-Sheet_7
+  - first:
+      213: 865866819880716563
+    second: AS_Frog_v1.1-Sheet_8
+  - first:
+      213: 1014518915020762277
+    second: AS_Frog_v1.1-Sheet_9
+  - first:
+      213: 1101644541437968070
+    second: AS_Frog_v1.1-Sheet_10
+  - first:
+      213: 2011347108212644458
+    second: AS_Frog_v1.1-Sheet_11
+  - first:
+      213: -9024806965229225055
+    second: AS_Frog_v1.1-Sheet_12
+  - first:
+      213: -6039613578563353529
+    second: AS_Frog_v1.1-Sheet_13
+  - first:
+      213: 5804065788524394313
+    second: AS_Frog_v1.1-Sheet_14
+  - first:
+      213: 4476308393500501842
+    second: AS_Frog_v1.1-Sheet_15
+  - first:
+      213: 2166127841751995891
+    second: AS_Frog_v1.1-Sheet_16
+  - first:
+      213: -832055086789379860
+    second: AS_Frog_v1.1-Sheet_17
+  - first:
+      213: -571362309860791738
+    second: AS_Frog_v1.1-Sheet_18
+  - first:
+      213: -7893326558782280554
+    second: AS_Frog_v1.1-Sheet_19
+  - first:
+      213: 2608061201102280169
+    second: AS_Frog_v1.1-Sheet_20
+  - first:
+      213: -6528562815945886497
+    second: AS_Frog_v1.1-Sheet_21
+  - first:
+      213: -1613733961170282872
+    second: AS_Frog_v1.1-Sheet_22
+  - first:
+      213: 5958005728572938691
+    second: AS_Frog_v1.1-Sheet_23
+  - first:
+      213: -3259302008807437709
+    second: AS_Frog_v1.1-Sheet_24
+  - first:
+      213: 4669215363541734401
+    second: AS_Frog_v1.1-Sheet_25
+  - first:
+      213: 3677170240257401990
+    second: AS_Frog_v1.1-Sheet_26
+  - first:
+      213: 6411025267426145412
+    second: AS_Frog_v1.1-Sheet_27
+  - first:
+      213: 2059556839944715571
+    second: AS_Frog_v1.1-Sheet_28
+  - first:
+      213: -1945135570514587455
+    second: AS_Frog_v1.1-Sheet_29
+  - first:
+      213: 3021094392669791709
+    second: AS_Frog_v1.1-Sheet_30
+  - first:
+      213: 5505112060304354934
+    second: AS_Frog_v1.1-Sheet_31
+  - first:
+      213: -3249386789396701730
+    second: AS_Frog_v1.1-Sheet_32
+  - first:
+      213: 4197904569929557293
+    second: AS_Frog_v1.1-Sheet_33
+  - first:
+      213: -6026003645057645802
+    second: AS_Frog_v1.1-Sheet_34
+  - first:
+      213: -6064037172552183492
+    second: AS_Frog_v1.1-Sheet_35
+  - first:
+      213: -1222881078510881649
+    second: AS_Frog_v1.1-Sheet_36
+  - first:
+      213: 5490371507552649875
+    second: AS_Frog_v1.1-Sheet_37
+  - first:
+      213: 8731237455351325300
+    second: AS_Frog_v1.1-Sheet_38
+  - first:
+      213: -3186203389130517653
+    second: AS_Frog_v1.1-Sheet_39
+  - first:
+      213: 1467185316470052048
+    second: AS_Frog_v1.1-Sheet_40
+  - first:
+      213: 6163838747339383010
+    second: AS_Frog_v1.1-Sheet_41
+  - first:
+      213: 264633655189011327
+    second: AS_Frog_v1.1-Sheet_42
+  - first:
+      213: 5178277762276783348
+    second: AS_Frog_v1.1-Sheet_43
+  - first:
+      213: 8341010806272449901
+    second: AS_Frog_v1.1-Sheet_44
+  - first:
+      213: -4886623535871030878
+    second: AS_Frog_v1.1-Sheet_45
+  - first:
+      213: -6470074871122323802
+    second: AS_Frog_v1.1-Sheet_46
+  - first:
+      213: -1666706543940509790
+    second: AS_Frog_v1.1-Sheet_47
+  - first:
+      213: -1422176444377606507
+    second: AS_Frog_v1.1-Sheet_48
+  - first:
+      213: 5077025255092857836
+    second: AS_Frog_v1.1-Sheet_49
+  - first:
+      213: -303838926583964277
+    second: AS_Frog_v1.1-Sheet_50
+  - first:
+      213: -7298698350544813486
+    second: AS_Frog_v1.1-Sheet_51
+  - first:
+      213: -927616111366512563
+    second: AS_Frog_v1.1-Sheet_52
+  - first:
+      213: -8424496459074175573
+    second: AS_Frog_v1.1-Sheet_53
+  - first:
+      213: 6435917101114663033
+    second: AS_Frog_v1.1-Sheet_54
+  - first:
+      213: -3707222798019315263
+    second: AS_Frog_v1.1-Sheet_55
+  - first:
+      213: -2141515632080787976
+    second: AS_Frog_v1.1-Sheet_56
+  - first:
+      213: -3595257498514435224
+    second: AS_Frog_v1.1-Sheet_57
+  - first:
+      213: 4632388821586401663
+    second: AS_Frog_v1.1-Sheet_58
+  - first:
+      213: -4810092425218473953
+    second: AS_Frog_v1.1-Sheet_59
+  - first:
+      213: -1005144623371603855
+    second: AS_Frog_v1.1-Sheet_60
+  - first:
+      213: 8858390554230685833
+    second: AS_Frog_v1.1-Sheet_61
+  - first:
+      213: 3482341183399688150
+    second: AS_Frog_v1.1-Sheet_62
+  - first:
+      213: -3659803007654383072
+    second: AS_Frog_v1.1-Sheet_63
+  - first:
+      213: 8294732019783390240
+    second: AS_Frog_v1.1-Sheet_64
+  - first:
+      213: 1989473962012252305
+    second: AS_Frog_v1.1-Sheet_65
+  - first:
+      213: -769984990158801023
+    second: AS_Frog_v1.1-Sheet_66
+  - first:
+      213: -7548006772069174472
+    second: AS_Frog_v1.1-Sheet_67
+  - first:
+      213: -6473410535989564173
+    second: AS_Frog_v1.1-Sheet_68
+  - first:
+      213: -3029525614686526584
+    second: AS_Frog_v1.1-Sheet_69
+  - first:
+      213: 7725047852018631407
+    second: AS_Frog_v1.1-Sheet_70
+  - first:
+      213: -958745623436271455
+    second: AS_Frog_v1.1-Sheet_71
+  - first:
+      213: -6876815870111846390
+    second: AS_Frog_v1.1-Sheet_72
+  - first:
+      213: -7001261684310377723
+    second: AS_Frog_v1.1-Sheet_73
+  - first:
+      213: -6015376076628745806
+    second: AS_Frog_v1.1-Sheet_74
+  - first:
+      213: 1198913544428272320
+    second: AS_Frog_v1.1-Sheet_75
+  - first:
+      213: -663535326301185949
+    second: AS_Frog_v1.1-Sheet_76
+  - first:
+      213: -1309062203546141366
+    second: AS_Frog_v1.1-Sheet_77
+  - first:
+      213: -7887378804330371750
+    second: AS_Frog_v1.1-Sheet_78
+  - first:
+      213: -7145593232440837069
+    second: AS_Frog_v1.1-Sheet_79
+  - first:
+      213: -4858360469812860960
+    second: AS_Frog_v1.1-Sheet_80
+  - first:
+      213: 3354288872789092849
+    second: AS_Frog_v1.1-Sheet_81
+  - first:
+      213: -2389358452129779405
+    second: AS_Frog_v1.1-Sheet_82
+  - first:
+      213: -7161591811383480045
+    second: AS_Frog_v1.1-Sheet_83
+  - first:
+      213: -555766548845891128
+    second: AS_Frog_v1.1-Sheet_84
+  - first:
+      213: 956667493131775044
+    second: AS_Frog_v1.1-Sheet_85
+  - first:
+      213: 4278152404286456329
+    second: AS_Frog_v1.1-Sheet_86
+  - first:
+      213: -6171030517744755297
+    second: AS_Frog_v1.1-Sheet_87
+  - first:
+      213: -9128707849408618793
+    second: AS_Frog_v1.1-Sheet_88
+  - first:
+      213: 1533135503949502858
+    second: AS_Frog_v1.1-Sheet_89
+  - first:
+      213: -7834674527736503477
+    second: AS_Frog_v1.1-Sheet_90
+  - first:
+      213: -454009729216374531
+    second: AS_Frog_v1.1-Sheet_91
+  - first:
+      213: -5068375141605604183
+    second: AS_Frog_v1.1-Sheet_92
+  - first:
+      213: -3451108069222226367
+    second: AS_Frog_v1.1-Sheet_93
+  - first:
+      213: 7240105383106395859
+    second: AS_Frog_v1.1-Sheet_94
+  - first:
+      213: 4684317179601107055
+    second: AS_Frog_v1.1-Sheet_95
+  - first:
+      213: 395528572802082393
+    second: AS_Frog_v1.1-Sheet_96
+  - first:
+      213: -5193424375649500565
+    second: AS_Frog_v1.1-Sheet_97
+  - first:
+      213: -1884259913244862023
+    second: AS_Frog_v1.1-Sheet_98
+  - first:
+      213: -5547069317043032966
+    second: AS_Frog_v1.1-Sheet_99
+  - first:
+      213: -8126018095559905108
+    second: AS_Frog_v1.1-Sheet_100
+  - first:
+      213: 6039736727115817978
+    second: AS_Frog_v1.1-Sheet_101
+  - first:
+      213: -7893594004027214549
+    second: AS_Frog_v1.1-Sheet_102
+  - first:
+      213: -302785870469206059
+    second: AS_Frog_v1.1-Sheet_103
+  - first:
+      213: -6312138782306807895
+    second: AS_Frog_v1.1-Sheet_104
+  - first:
+      213: -9031308286710466733
+    second: AS_Frog_v1.1-Sheet_105
+  - first:
+      213: -9028709528389444831
+    second: AS_Frog_v1.1-Sheet_106
+  - first:
+      213: 393349046795250837
+    second: AS_Frog_v1.1-Sheet_107
+  - first:
+      213: 6877322877165059531
+    second: AS_Frog_v1.1-Sheet_108
+  - first:
+      213: 3752312041747594747
+    second: AS_Frog_v1.1-Sheet_0
+  - first:
+      213: -1316942831214012352
+    second: AS_Frog_v1.1-Sheet_1
+  - first:
+      213: 5290614691650579727
+    second: AS_Frog_v1.1-Sheet_2
+  - first:
+      213: 8041228222432268049
+    second: AS_Frog_v1.1-Sheet_3
+  - first:
+      213: 3137636433011310682
+    second: AS_Frog_v1.1-Sheet_4
+  - first:
+      213: -5684289648352062497
+    second: AS_Frog_v1.1-Sheet_5
+  - first:
+      213: 7247031477951828726
+    second: AS_Frog_v1.1-Sheet_6
+  - first:
+      213: 7049219107438246123
+    second: AS_Frog_v1.1-Sheet_7
+  - first:
+      213: 3225345054060621727
+    second: AS_Frog_v1.1-Sheet_8
+  - first:
+      213: 7696794807191776980
+    second: AS_Frog_v1.1-Sheet_9
+  - first:
+      213: 389530000762669923
+    second: AS_Frog_v1.1-Sheet_10
+  - first:
+      213: 7150599593564367906
+    second: AS_Frog_v1.1-Sheet_11
+  - first:
+      213: -7625586935491476316
+    second: AS_Frog_v1.1-Sheet_12
+  - first:
+      213: 3968215621775524497
+    second: AS_Frog_v1.1-Sheet_13
+  - first:
+      213: -4864283275974387988
+    second: AS_Frog_v1.1-Sheet_14
+  - first:
+      213: -6913572590244668792
+    second: AS_Frog_v1.1-Sheet_15
+  - first:
+      213: 3969317347982991128
+    second: AS_Frog_v1.1-Sheet_16
+  - first:
+      213: 1733370896557961316
+    second: AS_Frog_v1.1-Sheet_17
+  - first:
+      213: -2995500003243313288
+    second: AS_Frog_v1.1-Sheet_18
+  - first:
+      213: -7425244687173703304
+    second: AS_Frog_v1.1-Sheet_19
+  - first:
+      213: -1316188277187242051
+    second: AS_Frog_v1.1-Sheet_20
+  - first:
+      213: 7671848436576653817
+    second: AS_Frog_v1.1-Sheet_21
+  - first:
+      213: 7750363064988805827
+    second: AS_Frog_v1.1-Sheet_22
+  - first:
+      213: 4767672865585302982
+    second: AS_Frog_v1.1-Sheet_23
+  - first:
+      213: -1635356751986930432
+    second: AS_Frog_v1.1-Sheet_24
+  - first:
+      213: 2252410370592595781
+    second: AS_Frog_v1.1-Sheet_25
+  - first:
+      213: -3539988498701954393
+    second: AS_Frog_v1.1-Sheet_26
+  - first:
+      213: -1936891087885640868
+    second: AS_Frog_v1.1-Sheet_27
+  - first:
+      213: -6545034048577254489
+    second: AS_Frog_v1.1-Sheet_28
+  - first:
+      213: -7105260214675280083
+    second: AS_Frog_v1.1-Sheet_29
+  - first:
+      213: -3192482654798075429
+    second: AS_Frog_v1.1-Sheet_30
+  - first:
+      213: 7784393816326068745
+    second: AS_Frog_v1.1-Sheet_31
+  - first:
+      213: -5755804774888198649
+    second: AS_Frog_v1.1-Sheet_32
+  - first:
+      213: -4102093706336491824
+    second: AS_Frog_v1.1-Sheet_33
+  - first:
+      213: 7455970688436400459
+    second: AS_Frog_v1.1-Sheet_34
+  - first:
+      213: 8783588402438432524
+    second: AS_Frog_v1.1-Sheet_35
+  - first:
+      213: 90825283778740976
+    second: AS_Frog_v1.1-Sheet_36
+  - first:
+      213: 4560666885968513343
+    second: AS_Frog_v1.1-Sheet_37
+  - first:
+      213: 7157110169642341847
+    second: AS_Frog_v1.1-Sheet_38
+  - first:
+      213: -5883424582577580044
+    second: AS_Frog_v1.1-Sheet_39
+  - first:
+      213: -5340685110340808811
+    second: AS_Frog_v1.1-Sheet_40
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd39cedbe3e21430800000000000000
+      internalID: 3752312041747594747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048ddf3f87749bde0800000000000000
+      internalID: -1316942831214012352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0dab4bf70a0c6940800000000000000
+      internalID: 5290614691650579727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fcbebc67e289f60800000000000000
+      internalID: 8041228222432268049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5086ff36bf1b8b20800000000000000
+      internalID: 3137636433011310682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd39b857ea85d11b0800000000000000
+      internalID: -5684289648352062497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f294679bb0a29460800000000000000
+      internalID: 7247031477951828726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8b0ca0e6bd3d160800000000000000
+      internalID: 7049219107438246123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9fa851fc3ab2cc20800000000000000
+      internalID: 3225345054060621727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4deacb7091280da60800000000000000
+      internalID: 7696794807191776980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b01dcc873e76500800000000000000
+      internalID: 389530000762669923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ce471e1780c3360800000000000000
+      internalID: 7150599593564367906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4cb2295197c2690800000000000000
+      internalID: -7625586935491476316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1920610651fe11730800000000000000
+      internalID: 3968215621775524497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce65ca0f1289e7cb0800000000000000
+      internalID: -4864283275974387988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ad69ddb5e0e00a0800000000000000
+      internalID: -6913572590244668792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f525ff819d51730800000000000000
+      internalID: 3969317347982991128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460765985ab2e0810800000000000000
+      internalID: 1733370896557961316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AS_Frog_v1.1-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877300e2e98dd66d0800000000000000
+      internalID: -2995500003243313288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
