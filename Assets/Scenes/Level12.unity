@@ -3019,5 +3019,10 @@ PrefabInstance:
       propertyPath: flag
       value: 
       objectReference: {fileID: 471714004}
+    - target: {fileID: 6702836754510474557, guid: 112dd5cd17819430b938fa5979053d1a,
+        type: 3}
+      propertyPath: rat
+      value: 
+      objectReference: {fileID: 1791259495}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112dd5cd17819430b938fa5979053d1a, type: 3}

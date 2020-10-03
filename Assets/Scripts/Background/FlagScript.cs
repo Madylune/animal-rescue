@@ -7,11 +7,14 @@ public class FlagScript : MonoBehaviour
     [SerializeField]
     private bool isTutorial;
 
+    private bool soundIsPlayed = false;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && !soundIsPlayed)
         {
             SoundManager.instance.VictorySound();
+            soundIsPlayed = true;
 
             Invoke("ChangeAfterTime", 3f);
         }
